@@ -1,0 +1,16 @@
+GPIO,Player,Input,Key,Notes
+GP0,P1,Up,Up Arrow,Joystick Up
+GP1,P1,Down,Down Arrow,Joystick Down
+GP2,P1,Left,Left Arrow,"Joystick Left "
+GP3,P1,Right,Right Arrow,Joystick Right
+GP4,P1,Button 1,L-Ctrl,Jump
+GP5,P1,Button 2,L-Alt,Attack
+GP6,P1,Button 3,Space,Special
+GP7,P2,Up,R,Joystick Up
+GP8,P2,Down,F,Joystick Down
+GP9,P2,Left,D,"Joystick Left "
+GP10,P2,Right,G,Joystick Right
+GP11,P2,Button 1,A,Jump
+GP12,P2,Button 2,S,Attack
+GP13,P2,Button 3,Q,Special
+GND,SHARED,Ground,,Common Ground
