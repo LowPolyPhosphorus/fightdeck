@@ -1,0 +1,19 @@
+GPIO,Player,Input,Key,Notes
+GP0,P3,Up,I,Joystick Up
+GP1,P3,Down,K,Joystick Down
+GP2,P3,Left,J,Joystick Left
+GP3,P3,Right,L,Joystick Right
+GP4,P3,Button 1,R-Shift,Jump
+GP5,P3,Button 2,Enter,Attack
+GP6,P3,Button 3,P,Special
+GP7,P4,Up,Num 8,Joystick Up
+GP8,P4,Down,Num 2,Joystick Down
+GP9,P4,Left,Num 4,Joystick Left
+GP10,P4,Right,Num 6,Joystick Right
+GP11,P4,Button 1,Num 0,Jump
+GP12,P4,Button 2,Num .,Attack
+GP13,P4,Button 3,Num Enter,Special
+GP14,SYSTEM,Vol+,Medial Vol+,Rocker R
+GP15,SYSTEM,Vol-,Media Vol-,Rocker L
+GP16,SYSTEM,Power,Sleep/Wake,"Latching, send sleep on OFF transition"
+GND,SHARED,Ground,,Common Ground
