@@ -4,7 +4,7 @@
 # what it does
 - all 4 players output keyboard inputs via two Picos
 - volume rocker works as media keys
-- power swithc puts the host machine to sleep
+- power switch puts the host machine to sleep
 - works on Windows, Linux, RetroPie, and anything that accepts a USB keyboard
 
 ## hardware
