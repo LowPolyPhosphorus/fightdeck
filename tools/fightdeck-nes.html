@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>FightDeck NES</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { background: #111; color: #eee; font-family: sans-serif; display: flex; flex-direction: column; align-items: center; min-height: 100vh; padding: 24px; }
+    h1 { margin-bottom: 20px; font-size: 1.4rem; letter-spacing: 2px; color: #fff; }
+    #setup {
+      border: 2px dashed #fff;
+      border-radius: 8px;
+      padding: 32px 48px;
+      text-align: center;
+      margin-bottom: 24px;
+    }
+    #setup p { margin-bottom: 16px; color: #aaa; }
+    input[type="text"] {
+      background: #222;
+      border: 1px solid #fff;
+      color: #eee;
+      padding: 8px 12px;
+      border-radius: 4px;
+      width: 300px;
+      margin-bottom: 12px;
+      font-size: 1rem;
+    }
+    button {
+      display: block;
+      margin: 8px auto 0;
+      background: #fff;
+      color: #111;
+      padding: 8px 24px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-weight: bold;
+      font-size: 1rem;
+    }
+    #game-container { width: 100%; max-width: 800px; display: none; }
+    #game { width: 100%; aspect-ratio: 4/3; }
+  </style>
+</head>
+<body>
+  
+
+  <div id="setup">
+    <p>Enter the filename of your .nes ROM (must be in the same folder as this HTML file)</p>
+    <input type="text" id="rom-name" placeholder="game.nes" value="game.nes">
+    <button onclick="loadROM()">Launch</button>
+  </div>
+
+  <div id="game-container">
+    <div id="game"></div>
+  </div>
+
+  <script>
+    var EJS_player = '#game';
+    var EJS_core = 'nes';
+    var EJS_pathtodata = 'https://www.emulatorjs.com/';
+    var EJS_biosUrl = '';
+    var EJS_lightgun = false;
+
+    function loadROM() {
+      const filename = document.getElementById('rom-name').value.trim();
+      if (!filename) return;
+
+      EJS_gameUrl = filename; // relative path — must be in same folder
+      document.getElementById('setup').style.display = 'none';
+      document.getElementById('game-container').style.display = 'block';
+
+      const script = document.createElement('script');
+      script.src = 'https://www.emulatorjs.com/loader.js';
+      document.body.appendChild(script);
+    }
+  </script>
+</body>
+</html>
