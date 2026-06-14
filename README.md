@@ -47,8 +47,25 @@ includes a browser based NES emulator page for demo purposes using EmulatorJS
 5. configure controls inside the emulator settings menu
 note: you have to use the localhost URL, opening the HTML file directly will not work
 
-# Why
+## wiring
+each button and joystick direction switch has two wires. one goes to a GPIO pin on the Pico, the other goes to ground. internal pull-ups are enabled in the firmware to prevent the need of resistors
+all ground wires are bundled and soldered to a shared ground pin on each pico.
+see `docs/pico1_pinout.csv` and `docs/pico2_pinout.csv` for the full pin assignment, and `docs/keymap.md` for the key mapping
+
+## how to build it!
+1. trace and label all the wires from the fight deck, one per button/direction
+2. identify ground vs signal wire on each switch using a continuity tester (if you have an arduino you can test it with `tools/continuity_tester.ino`)
+3. bundle wires by player group (P1+P2 for Pico 1, P3+P4+volume+power for Pico 2
+4. solder all ground wires together and connect to a GND pin on the Pico
+5. solder each signal wire to the GPIO pin listed in the pinout CSV
+6. drag the .UF2 from [here](https://circuitpython.org/board/raspberry_pi_pico/) into the root of the folder, the pico will reboot and new files will appear, then download the bundle from [here](https://circuitpython.org/libraries), unzip it and find the folder labeled "adafruit_hid" and drag that into the /lib/ folder as per the flashing steps above
+7. plug both picos into USB and test inputs in a text editor before launching anygame, then you can try launching .NES roms through the fightdeck-nes.html provided
+
+## Why
 I have had this fight deck for multiple years, and have attempted to make it to proper inputs before but never had done it as properly as I have this time, typically it was with random PC propiertary mapping as a joke or otherwise and not all of the buttons were wired since I only had an arduino. I have also for a long time, wanted to make a retropie/retroarch arcade cabinet and this brings me a step closer to ever doing that, plus this whole project was like 30 bucks with how cheap the fight deck was considering I found it at a Goodwill, purchasing a set of 12 buttons, and 4 joysticks would have easily exceeded that price. the buttons alone would probably be 30 bucks and it would be even more if you consider the materials for the entire enclosure.
+
+## demo
+see [here](https://youtu.be/bwVC0nnsRhk)
 
 # Zine
 <img alt="image" src="Zine/zine.png" />
