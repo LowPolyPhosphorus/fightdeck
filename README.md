@@ -40,3 +40,11 @@ includes a browser based NES emulator page for demo purposes using EmulatorJS
 4. type the ROM filename into the box and hit Launch
 5. configure controls inside the emulator settings menu
 note: you have to use the localhost URL, opening the HTML file directly will not work
+
+# Zine
+<img alt="image" src="Zine/zine.png" />
+
+# Gallery 
+<img width="1194" height="885" alt="image" src="https://github.com/user-attachments/assets/8dc26584-57a8-4888-8b7b-ef3e8e566547" />
+<img width="636" height="713" alt="image" src="https://github.com/user-attachments/assets/6fcce40b-f8c8-41ae-b160-0d901fd58d08" />
+<img width="1180" height="885" alt="image" src="https://github.com/user-attachments/assets/77615d7d-591b-4753-8e99-85ea7a1da0e8" />
