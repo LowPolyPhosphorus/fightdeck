@@ -1,7 +1,7 @@
 # fightdeck
 4 player TMNT arcade fight deck wired to two Raspberry Pi Picos acting as USB HID keyboards. Built for Fallout Fest as a hackathon project.
 
-# what it does
+## what it does
 - all 4 players output keyboard inputs via two Picos
 - volume rocker works as media keys
 - power switch puts the host machine to sleep
