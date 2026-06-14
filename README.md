@@ -56,3 +56,4 @@ note: you have to use the localhost URL, opening the HTML file directly will not
 <img width="1180" height="885" alt="image" src="https://github.com/user-attachments/assets/77615d7d-591b-4753-8e99-85ea7a1da0e8" />
 <img width="1180" height="885" alt="image" src="https://github.com/user-attachments/assets/185fb8f6-c311-47bb-8651-294e0cd51c1a" />
 <img width="1873" height="856" alt="image" src="https://github.com/user-attachments/assets/794940f0-1ec1-4be2-a752-e49a8b91a7d7" />
+> Some of these photos are older and were taken before it was finished, the final build has the picos fully soldered
