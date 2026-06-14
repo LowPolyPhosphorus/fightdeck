@@ -11,8 +11,11 @@
 - 2x Raspberry Pi Pico
 - TMNT Arcade1Up 4 Player fight deck
 - micro usb cables (optional a usb hub to make it only take up one cable and have a cleaner interface)
+   
+<sub> if you want to make this yourself, you can do it with just 2 players too!, just take the firmware from pico 1 or pico 2 if you have power and volume buttons (but you may have to remap the buttons) </sub>
 
-## pico layout
+
+## pico layout 
 - Pico 1: P1 + P2
 - Pico 2: P3 + P4
 
