@@ -47,6 +47,9 @@ includes a browser based NES emulator page for demo purposes using EmulatorJS
 5. configure controls inside the emulator settings menu
 note: you have to use the localhost URL, opening the HTML file directly will not work
 
+# Why
+I have had this fight deck for multiple years, and have attempted to make it to proper inputs before but never had done it as properly as I have this time, typically it was with random PC propiertary mapping as a joke or otherwise and not all of the buttons were wired since I only had an arduino. I have also for a long time, wanted to make a retropie/retroarch arcade cabinet and this brings me a step closer to ever doing that, plus this whole project was like 30 bucks with how cheap the fight deck was considering I found it at a Goodwill, purchasing a set of 12 buttons, and 4 joysticks would have easily exceeded that price. the buttons alone would probably be 30 bucks and it would be even more if you consider the materials for the entire enclosure.
+
 # Zine
 <img alt="image" src="Zine/zine.png" />
 
