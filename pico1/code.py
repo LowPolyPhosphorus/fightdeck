@@ -53,8 +53,9 @@ for pin, _ in BUTTON_MAP:
 pressed = [False] * len(BUTTON_MAP)
 
 while True:
-    for i, (btn, (_, key)) in enumerate(zip(buttons, BUTTON_MAP)):
-        is_pressed = not btn.value # active LOW: False = pressed
+    for i in range(len(BUTTON_MAP)):
+        is_pressed = not buttons[i].value # active LOW: False = pressed
+        key = BUTTON_MAP[i][1]
 
         if is_pressed and not pressed[i]:
             kbd.press(key)
